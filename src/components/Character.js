@@ -19,7 +19,7 @@ font-size:1.5rem;
 `
   const Character = (prop) => {
    
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   const toggleButton = (elem) => {
     setShow(!show)
@@ -29,7 +29,7 @@ font-size:1.5rem;
         <div className="container">
       <StyledCharacters style={{color: 'black'}} >
         <button className="btn" id="toggleButton" onClick={toggleButton}>{prop.info.name} </button>
-      <Info>  {show === true ?  `My name is ${prop.info.name},
+      <Info>  {show === true ?  `
        I was born in the year ${prop.info.birth_year} , my eye color is
         ${prop.info.eye_color}.I am ${prop.info.height} ft tall and my films are ${prop.info.films}` :  null}</Info>
         </StyledCharacters>
