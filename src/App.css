@@ -1,8 +1,32 @@
 .App {
   text-align: center;
+  
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: #AA0757;
+  text-shadow: 1px 0px 5px blue;
+  font-size: 2.4rem;
+  
 }
 /* write your parent styles in here for your App.js */
+.container {
+  border: 1px solid #AA0757;
+  box-shadow: 1px 2.5px 2px -2px white;
+  border-radius: 8px;
+  margin-top: 9px;
+  padding: 3px;
+  background-color: transparent;
+  opacity: 70%;
+  font-weight: 700;
+}
+ 
+  .btn {
+    background-color: #AA0757;
+    width: 10%;
+    height: 50px;
+    
+    
+  }
+
+  
+
