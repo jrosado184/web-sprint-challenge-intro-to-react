@@ -4,4 +4,8 @@ body {
   font-family: sans-serif;
   background-image: url('./images/f38e413a04321ed0f6b848568ddc2650.jpg');
   background-size: cover;
+  background-repeat: cover;
+  background-attachment: fixed;
+  font-family: 'Star Jedi', arial;
 }
+

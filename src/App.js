@@ -33,17 +33,14 @@ const App = () => {
       {
         characters.map(elem => {
           return <Character info={elem} />
+        
+          
         })
 
-
+        
 
       }
-     
-     
-  
-
-      
-    </div>
+     </div>
   );
 }
 

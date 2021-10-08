@@ -6,8 +6,8 @@
   color: #AA0757;
   text-shadow: 1px 0px 5px blue;
   font-size: 2.4rem;
-  
 }
+
 /* write your parent styles in here for your App.js */
 .container {
   border: 1px solid #AA0757;
@@ -18,15 +18,24 @@
   background-color: transparent;
   opacity: 70%;
   font-weight: 700;
+  
 }
  
   .btn {
     background-color: #AA0757;
     width: 10%;
     height: 50px;
-    
-    
-  }
+    border-radius: 20%;
+   }
+
+   .year {
+    background-color: blue;
+    width: 10%
+
+   }
+
+
+ 
 
   
 
