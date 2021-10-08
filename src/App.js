@@ -6,6 +6,7 @@ import Character from "./components/Character"
 const App = () => {
 
   const [characters, setCharacters] = useState([])
+  
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 

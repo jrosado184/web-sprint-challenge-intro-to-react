@@ -2,6 +2,7 @@
 import App from "../App"
 import styled from "styled-components";
 import '../App.css';
+import React, { useState } from "react";
 
 
 const StyledCharacters = styled.div`
@@ -14,27 +15,26 @@ const Info = styled.p`
 color: white;
 text-align: left;
 padding-left: 2%;
-
-
-
+font-size:1.5rem;
 `
+  const Character = (prop) => {
+   
+  const [show, setShow] = useState(true);
 
-
-
-
-
-const Character = (prop) => {
-    return (
+  const toggleButton = (elem) => {
+    setShow(!show)
+  }
+  
+  return (
         <div className="container">
       <StyledCharacters style={{color: 'black'}} >
-        <button className="btn">{prop.info.name} </button>
+        <button className="btn" id="toggleButton" onClick={toggleButton}>{prop.info.name} </button>
+      <Info>  {show === true ?  `My name is ${prop.info.name},
+       I was born in the year ${prop.info.birth_year} , my eye color is
+        ${prop.info.eye_color}.I am ${prop.info.height} ft tall and my films are ${prop.info.films}` :  null}</Info>
         </StyledCharacters>
-      <Info>
-      <p>Birth Year: {prop.info.birth_year}</p>
-        <p>Eye Color: {prop.info.eye_color}</p>
-        <p>Films :{prop.info.films}</p>
-        <p>Height: {prop.info.height}</p>
-        </Info>
+     
+        
         </div>
     )
 }

@@ -16,23 +16,19 @@
   margin-top: 9px;
   padding: 3px;
   background-color: transparent;
-  opacity: 70%;
+  opacity: 100%;
   font-weight: 700;
   
 }
  
   .btn {
     background-color: #AA0757;
-    width: 10%;
+    width: 12%;
     height: 50px;
     border-radius: 20%;
    }
 
-   .year {
-    background-color: blue;
-    width: 10%
-
-   }
+   
 
 
  
